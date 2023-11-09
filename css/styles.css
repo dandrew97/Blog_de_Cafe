@@ -1,4 +1,4 @@
-/** Importar fuentes **/
+/* Importar fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
 
 /* Agregar los variables */
@@ -8,9 +8,9 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     /* Colores */
-    --colorPrimario: #784d3c
-    --blanco: #FFFFFF
-    --negro: #000000
+    --colorPrimario: #784d3c;
+    --blanco: #FFFFFF;
+    --negro: #000000;
 }
 
 html {
@@ -26,7 +26,7 @@ body {
     line-height: 2; /* Interlineado */
 }
 
-/** Globales **/
+/* Globales */
 .contenedor {
     max-width: 120rem;
     width: 90%;
@@ -47,7 +47,7 @@ img {
     max-width: 100%;
 }
 
-/** Utilidades **/
+/* Utilidades */
 .no-margin {
     margin: 0;
 }
@@ -56,4 +56,52 @@ img {
 }
 .centrar-texto {
     text-align: center;
+}
+
+/* Header */
+.header {
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; /* Esta propiedad permite que al hacer más pequeña la pantalla se vea el centro de la imgen */
+}
+.header__texto {
+    text-align: center;
+    color: var(--blanco);
+}
+@media (min-width: 768px) {
+    .header__texto {
+        margin-top: 12rem;
+    }
+}
+
+/* Barra de navegación */
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between; /* Alinea horizontalmente */ 
+        align-items: center; /* Alinea verticalmente */
+    }
+    .navegacion {
+        gap: 3rem;
+    }
+}
+.logo {
+    color: var(--blanco);
+}
+.logo__nombre {
+    font-weight: 400;
+}
+.logo__bold {
+    font-weight: 700;
+}
+.navegacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navegacion a {
+    color: var(--blanco);
+    font-weight: 700;
 }
