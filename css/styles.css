@@ -183,3 +183,12 @@ img {
     padding-bottom: 3rem ;
     margin-top: 4rem;
 }
+
+/* PAGINA NOSOTOS */
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+}
