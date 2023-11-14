@@ -220,3 +220,8 @@ img {
         column-gap: 2rem;
     }
 }
+
+/* Pagina Entrada */
+.entrada__titulo {
+    text-align: center;
+}
